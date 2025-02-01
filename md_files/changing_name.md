@@ -23,4 +23,22 @@ This should bring up a NewName.csproj file if its not displayed already. Find St
 Please note: This does not change the StudentProject folder that everything is stored in. If you want to change it, then you also have to open the .sln file in notepad and manually change the path. While this does work, it might screw up some dependency somewhere, so I'm too scared to try it.
 
 
+### Resolving Errors
+If you follow these steps on some versions of the StudentProject zip, you might get this error "Error  : The project file could not be loaded. Data at the root level is invalid. Line 1, position 1." 
+
+If this happens, the fix is simple. Open file explorer, and navigate to where you've stored your files. Open the StudentProject folder, and find the .csproj file. It will have the same name as your new project name. For me, thats Hangman.csproj.
+
+Open the .csproj in a text editor (notepad is fine). The very first line should say something like:
+```
+Hangman<Project Sdk="Microsoft.NET.Sdk">
+```
+
+This is incorrect. Remove the name so the first line starts with a <Project
+
+```
+<Project Sdk="Microsoft.NET.Sdk">
+```
+
+Now, restart the program and it should work fine. I have 0 idea why it does this.  
+
 
