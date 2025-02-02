@@ -1,4 +1,4 @@
-# Random Tips
+# Tips and Tricks
 
 ## MonoGameEngine
 * Scaling the player inside MonoGameEngine will fuck up its collision. Try to export the image to the desired size instead.
