@@ -10,6 +10,24 @@
 
 
 ## C#
+* Shorthand operators are a very useful tool for writing code faster.
+    * For example, you already know the i++ from a FOR loop. 
+    * i++ is a shorthand for i = i + 1
+
+```C#
+position = position + 200
+health = health - 1
+speed = speed * multiplier
+score = score / 2
+```
+
+```C#
+position += 200
+health -= 1
+speed *= multiplier
+score /= 2
+```
+
 * Foreach is a handy alternative to a for loop when your looping through an array. Makes your code cleaner and more readable in my opinion.
 ``` C#
 // For Loop
