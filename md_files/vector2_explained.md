@@ -20,7 +20,7 @@ Normalizing a Vector means turning it into a Unit Vector which have combined len
 For example:
 - If your going only RIGHT, your vector would be (1, 0)
 - If your going only UP, your vector would be (0, 1)
-- If your going Right AND up, your vector would go from (1, 1) to (0.5, 0,5)
+- If your going Right AND up, your vector would go from (1, 1) to (~0.7, ~0.7)
 
 This is important because if you don't normalize the Vector, it means the object will actually go faster going diagonal than straight.
 This is why in old games like Doom, moving diagonally would get you more speed.
