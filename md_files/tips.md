@@ -6,6 +6,8 @@
     * Programming and Planning > Resources > Programming Stage 4 - Building a Graphical Game > BlankStudentProject.zip
     * After downloading the new zip file, make sure you right click it and mark it as safe.
 * SetDrawDebug(true) is a handy command to draw the collision box. Very useful when you are trying to figure out why your collisions aren't working properly.
+* Try and avoid putting things in Update() when possible. Remember, Update() will be called 60+, so only put code in there that NEEDS to be checked every frame.
+
 * Ask people for help. Bashing your head against a problem for 6 hours straight will just make you miserable (I speak from experience). If you cannot figure out something, ask someone for help.
 
 ### Scaling the player
@@ -84,7 +86,19 @@ score /= 2
 
 
 
-## Formating Numbers
+### Visual Studio Shortcuts
+Helpful shortcuts for Visual Studio 2022
+* Control + /
+    * Comments / Uncomments the highlighted piece of code
+* Tab
+    * Indents the highlighted piece of code
+* Shift + Tab
+    * Removes an Indent from the highlighted piece of code
+
+
+
+
+### Formating Numbers
 Formatting Numbers is a simple way to make text look nicer.
 ```C#
 // Here I use $strings, but other strings should work.
@@ -109,6 +123,7 @@ You can format numbers anytime you display them. For example, you can format num
 _timeDisplay.SetMessage($"Time: {0:0.00}"); // Rounds timer to 2 decimal places (12.25s).
 _scoreDisplay.SetMessage($"Score: {_player.Score:00000}"); // Forces at least 5 zeros (00400)
 ```
+
 
 
 ## Foreach
@@ -137,7 +152,6 @@ foreach (Bullet bullet in _bulletArray)
 
 
 
-
 ## Default Values
 ```
 * You can set default values. 
@@ -155,8 +169,6 @@ new Player();      // False
 new Player(false); // False
 new Player(true);  // True
 ``` 
-
-
 
 
 
