@@ -198,3 +198,41 @@ public Player(float speed = 200.0f, float sprintingMultiplier = 2.0f, bool drawD
 new Player(200.0f, 2.0f, true)
 new Player(drawDebug: true); 
 ```
+
+This only works if the value is optional (I.E if it has a default value). Without a default value, you will have to insert an value for every parameter.
+
+
+
+
+### Params
+Params is an interesting keyword. Normally, you are only allowed to add a specific number of values, but params allows you to add as many, or as little as you want.
+```C#
+public void AddNumbers(params int[] numberArray)
+{
+    int total = 0;
+    for (int i = 0; i < numberArray.Length; i++)
+    {
+        total += numberArray[i];
+    }
+    Debug.WriteLine(total);
+}
+```
+For example, heres a method to add numbers. We can add as many or as little arguments as we want. 
+
+```C#
+AddNumbers(); // 0
+AddNumbers(6); // 6
+AddNumbers(92, 3); // 95
+AddNumbers(20, 30, 60, 129, 21340, 123, 123, 123, 12, 94, 239); // 22293
+```
+Params can be any data type. They can be ints, floats, strings, chars, objects, you name it.
+
+There is some limitations though.   
+You can only have one params.  
+Every value has to be the same data type (so you can't add ints and strings to the same params as they are different data types).  
+Params must be the last paramater in the paramater list.
+```C#
+public void AddNumbers(params int[] numberArray, string test) {} // Error: Params must be the last paramater
+public void AddNumbers(string test, params int[] numberArray) {} // This is fine
+```
+
