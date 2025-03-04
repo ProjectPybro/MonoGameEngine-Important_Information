@@ -1,21 +1,26 @@
 # Tips and Tricks
 
 ## MonoGameEngine
-* MonoGameEngine disables the console so Console.Write won't work. Use Debug.Write or Debug.WriteLine instead!
-* Make sure you download the newest version of MonoGameEngine when making a new program.
-    * Programming and Planning > Resources > Programming Stage 4 - Building a Graphical Game > BlankStudentProject.zip
-    * After downloading the new zip file, make sure you right click it and mark it as safe.
-* SetDrawDebug(true) is a handy command to draw the collision box. Very useful when you are trying to figure out why your collisions aren't working properly.
-* Try and avoid putting things in Update() when possible. Remember, Update() will be called 60+, so only put code in there that NEEDS to be checked every frame.
+MonoGameEngine disables the console so Console.Write won't work. Use Debug.Write or Debug.WriteLine instead!  
 
-* Ask people for help. Bashing your head against a problem for 6 hours straight will just make you miserable (I speak from experience). If you cannot figure out something, ask someone for help.
+Make sure you download the newest version of MonoGameEngine when making a new program.  
+Programming and Planning > Resources > Programming Stage 4 - Building a Graphical Game > BlankStudentProject.zip
+After downloading the new zip file, make sure you right click it and mark it as safe.  
+
+
+Try and avoid putting things in Update() when possible. Remember, Update() will be called 60+, so only put code in there that NEEDS to be checked every frame.  
+
+Ask people for help. Bashing your head against a problem for 6 hours straight will just make you miserable (I speak from experience). If you cannot figure out something, ask someone for help. 
+
+
 
 ### Scaling the player
-Scaling a GameObject inside MonoGameEngine won't scale its collision box accordingly.
+SetDrawDebug(true) is a handy command to draw the collision box. Very useful when you are trying to figure out why your collisions aren't working properly.  
 ``` C#
 // Use this in a GameObject to draw it's collision box
 SetDrawDebug(true);
 ```
+Scaling a GameObject inside MonoGameEngine won't scale its collision box accordingly.
 ``` C#
 // Scale the Texture
 GetSprite().SetScale(4, 4);
@@ -28,6 +33,8 @@ SetBounds(
 
 // We use GetSprite().GetTexture() to get the original images dimensions
  ```
+
+
 
 ### Too Much Nesting
 ```C#
@@ -64,6 +71,8 @@ if (x > 0)
 See how this code is really hard to understand? Too many statements are nested inside of each other, so its hard to follow. When possible, try and avoid nesting statements too many times. For more, [check out his CodeAestetic Video here](https://www.youtube.com/watch?v=CFRhGnuXG-4)  
 It's worth noting that this is more personal opinion rather than objective fact. Other programmers may disagree with me.
 
+
+
 ## C#
 ### Shorthands
 * Shorthand operators are a very useful tool for writing code faster.
@@ -86,6 +95,12 @@ score /= 2
 
 
 
+### W3Schools
+If you forget how to do basic something in C#, W3Schools is a fantastic resource.
+https://www.w3schools.com/cs/index.php
+
+
+
 ### Visual Studio Shortcuts
 Helpful shortcuts for Visual Studio 2022
 * Control + /
@@ -94,7 +109,6 @@ Helpful shortcuts for Visual Studio 2022
     * Indents the highlighted piece of code
 * Shift + Tab
     * Removes an Indent from the highlighted piece of code
-
 
 
 
@@ -149,14 +163,13 @@ foreach (Bullet bullet in _bulletArray)
         bullet.Enable();
     }
 }
-
+```
 
 
 ## Default Values
-```
-* You can set default values. 
-    * In the player constructor, it has the boolean drawDebug. It assumes that the value is false, unless its told otherwise.
-    * This way, you don't have to make a ton of constuctors, while making it easy to adjust every object.
+You can set default values in your methods.  
+In the player constructor, it has the boolean drawDebug. It assumes that the value is false, unless its told otherwise.  
+This way, you don't have to make a ton of constuctors, while making it easy to adjust every object.
 
 ``` C#
 public Player(bool drawDebug = false)
@@ -173,14 +186,15 @@ new Player(true);  // True
 
 
 ## ??
-* You can also pick what values you want to change. 
-    * Normally, if I wanted to set the drawDebug to true, I would need to go through and input values for speed and sprinting modifier first.
-    * However, you can just call the parameter directly using a semi colon.
+You can also pick what values you want to pass in. 
+Normally, if I wanted to set the drawDebug to true, I would need to go through and input values for speed and sprinting modifier first.
+However, you can just call the parameter directly using a semi colon.
+
 ``` C#
-public Player(float speed = 200.0f, float sprintingMultiplier = 2.0f, bool drawDebug = false) {}
+// Player Constructor
+public Player(float speed = 200.0f, float sprintingMultiplier = 2.0f, bool drawDebug = false) {...}
 
 // All of these work
 new Player(200.0f, 2.0f, true)
 new Player(drawDebug: true); 
 ```
-
