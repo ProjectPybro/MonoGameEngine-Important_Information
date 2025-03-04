@@ -53,7 +53,7 @@ For example:
 | `Half Right + Half Down` | (0.5, 0.5) | (0.7, 0.7) |
 | `Half Right` | (0.5, 0) | (1, 0) |
 
-<img src="vector2_images/normalized_triangle.png" width="365" height="300">
+<img src="vector2_images/normalized_triangle.PNG" width="365" height="300">
 
 
 It's worth remembering that normalizing a vector still maintains it direction. 
