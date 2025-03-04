@@ -73,7 +73,8 @@ Vector2 NormalizedVector = TestVector;
 NormalizedVector.Normalize();
 Debug.WriteLine($"{TestVector} : {NormalizedVector}");
 
-// If you get an error on Debug.Writeline, right click it, go to the top where it says `Quick actions and refactoring`, and press `using diagnostics`.
+// If you get an error on Debug.Writeline, right click it, 
+// go to the top where it says `Quick actions and refactoring`, and press `using diagnostics`.
 ```
 
 ### Adding SPEED
