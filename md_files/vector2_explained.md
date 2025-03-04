@@ -29,7 +29,7 @@ The velocity combines 2 key pieces of information:
 ### Why Do we Normalize Vectors?
 Normalizing Vectors means changing it's overall length (in maths called the magnitude) to 1 while maintaining its direction.  
 This is important for Game Development, because if you don't normalize, the player will go FASTER if they go diagonally.  
-<img src="vector2_images/one_one_triangle.png" width="365" height="300">
+<img src="vector2_images/one_one_triangle.PNG" width="365" height="300">
 
 You can think of this in terms of the pythagoras theorem. 
 - If the player is going Right, their magnitude is 1 
@@ -103,7 +103,6 @@ if (playerVector != new Vector2(0, 0))
 {
     playerVector.Normalize
 }
-
 ```
 
 ### When NOT to Normalize Vectors

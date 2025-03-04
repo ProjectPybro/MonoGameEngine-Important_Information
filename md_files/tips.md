@@ -185,7 +185,7 @@ new Player(true);  // True
 
 
 
-## ??
+## Named Parameters
 You can also pick what values you want to pass in. 
 Normally, if I wanted to set the drawDebug to true, I would need to go through and input values for speed and sprinting modifier first.
 However, you can just call the parameter directly using a semi colon.
