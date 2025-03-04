@@ -82,6 +82,35 @@ speed *= multiplier
 score /= 2
 ```
 
+
+
+## Formating Numbers
+Formatting Numbers is a simple way to make text look nicer.
+```C#
+// Here I use $strings, but other strings should work.
+
+float timer = 97.23921f;
+Debug.WriteLine($"Time: {timer}s");       // Time: 97.23921s
+Debug.WriteLine($"Time: {timer:0.00}s");  // Time: 97.24s
+
+// 0 is a mandatory place, # is a optional place.
+float timer = 123.0f;
+Debug.WriteLine($"Time: {timer:0.00}s");  // Time: 123.00s
+Debug.WriteLine($"Time: {timer:0.##}s");  // Time: 123s
+
+float score = 450.23f;
+Debug.WriteLine($"Score: {score:00000}"); // Score: 00450
+Debug.WriteLine($"Score: {score:#####}"); // Score: 450
+// Since there was no decimal place (.) in the string, its rounds to the whole number.
+```
+You can format numbers anytime you display them. For example, you can format numbers for a Text object.
+```C#
+// Code from my Wac-A-Mole Project
+_timeDisplay.SetMessage($"Time: {0:0.00}"); // Rounds timer to 2 decimal places (12.25s).
+_scoreDisplay.SetMessage($"Score: {_player.Score:00000}"); // Forces at least 5 zeros (00400)
+```
+
+
 ## Foreach
 * Foreach is a handy alternative to a for loop when your looping through an array. Makes your code cleaner and more readable in my opinion.
 ``` C#
@@ -105,6 +134,10 @@ foreach (Bullet bullet in _bulletArray)
         bullet.Enable();
     }
 }
+
+
+
+
 ## Default Values
 ```
 * You can set default values. 
@@ -122,6 +155,11 @@ new Player();      // False
 new Player(false); // False
 new Player(true);  // True
 ``` 
+
+
+
+
+
 ## ??
 * You can also pick what values you want to change. 
     * Normally, if I wanted to set the drawDebug to true, I would need to go through and input values for speed and sprinting modifier first.
