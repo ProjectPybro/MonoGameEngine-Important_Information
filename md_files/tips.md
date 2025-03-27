@@ -102,13 +102,33 @@ https://www.w3schools.com/cs/index.php
 
 
 ### Visual Studio Shortcuts
-Helpful shortcuts for Visual Studio 2022
+Here are some helpful shortcuts for Visual Studio 2022.  
+All of these are extremely helpful, and you should use all of them!
 * Control + /
-    * Comments / Uncomments the highlighted piece of code
+    * Comments / Uncomments lines of code
+* Control + Shift + /
+    * Comments / Uncomments the selected area. Used for inline comments.
 * Tab
     * Indents the highlighted piece of code
 * Shift + Tab
     * Removes an Indent from the highlighted piece of code
+
+#### Minor shortcuts
+These shortcuts are less important, but still nice to know.
+* Alt + Up or Down Arrow Key 
+    * Moves the code up or down. Can work with one line or a highlighted segment.
+* Shift + Any Arrow Key
+    * Highlights code.
+* Control + Left or Right Arrow Key
+    * Moves by whole words instead of single characters
+* Control + Shift + Any Arrow Key
+    * Selects whole words. Useful in conjustion with Alt + Up or Down.
+* Control + L
+    * Deletes the line of code but copies it to your clipboard
+* Control + Shift + L
+    * Deletes the line of code without copying it. 
+* Alt + Shift + Up or Down Arrow Key
+    * Allows you to type the same thing on multiple lines at once. Usually not helpful, but once in a blue moon it can save you a ton of time.
 
 
 
