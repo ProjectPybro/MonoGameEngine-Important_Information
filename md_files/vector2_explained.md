@@ -26,6 +26,12 @@ The velocity combines 2 key pieces of information:
 | `Left + Up`    | (1, -1) |
 
 # Normalizing Vectors
+# Disclaimer!
+When this was originally made, I thought normalizing vectors would be an important part of game development, but as time has gone on its clear that it really doesn't matter that much for the stage we are at.  
+
+I've kept it in since I've already written the thing, but you do not have to read it. 
+Even if you do, it's not worth implementing into your game as it will just cause major problems for minor gain.
+
 ### Why Do we Normalize Vectors?
 Normalizing Vectors means changing it's overall length (in maths called the magnitude) to 1 while maintaining its direction.  
 This is important for Game Development, because if you don't normalize, the player will go FASTER if they go diagonally.  
