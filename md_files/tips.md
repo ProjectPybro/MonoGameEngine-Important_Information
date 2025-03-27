@@ -174,7 +174,7 @@ This way, you don't have to make a ton of constuctors, while making it easy to a
 ``` C#
 public Player(bool drawDebug = false)
 {
-    SetDrawDebug(true);
+    SetDrawDebug(drawDebug);
 }
 
 // All of these work

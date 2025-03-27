@@ -1,5 +1,5 @@
 # Vector2
-#### Why they matter
+### Why they matter
 A Vector is a type of matrix, specifically a Matrix with only 1 column (Column Matrix). Vector2 just means it has 2 rows and 1 column.
 Thats right, our Math class is actually important for Game Dev!
 
@@ -26,7 +26,7 @@ The velocity combines 2 key pieces of information:
 | `Left + Up`    | (1, -1) |
 
 # Normalizing Vectors
-# Disclaimer!
+# Disclaimer
 When this was originally made, I thought normalizing vectors would be an important part of game development, but as time has gone on its clear that it really doesn't matter that much for the stage we are at.  
 
 I've kept it in since I've already written the thing, but you do not have to read it. 
@@ -108,7 +108,7 @@ Therefore, it's important to check that your vector isn't empty before normalizi
 ```C#
 if (playerVector != new Vector2(0, 0))
 {
-    playerVector.Normalize
+    playerVector.Normalize();
 }
 ```
 
