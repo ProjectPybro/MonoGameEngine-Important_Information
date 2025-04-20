@@ -52,7 +52,7 @@ if (x > 0)
                         return false;
                         break;
                     case 1: 
-                        return true
+                        return true;
                         break;
                 }
             }
