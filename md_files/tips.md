@@ -68,7 +68,7 @@ if (x > 0)
     }
 }
 ```
-See how this code is really hard to understand? Too many statements are nested inside of each other, so its hard to follow. When possible, try and avoid nesting statements too many times. For more, [check out his CodeAestetic Video here](https://www.youtube.com/watch?v=CFRhGnuXG-4)  
+See how this code is really hard to understand? Too many statements are nested inside of each other, so its hard to follow. When possible, try and avoid nesting statements too many times. For more, [check out this CodeAestetic Video here](https://www.youtube.com/watch?v=CFRhGnuXG-4)  
 It's worth noting that this is more personal opinion rather than objective fact. Other programmers may disagree with me.
 
 
