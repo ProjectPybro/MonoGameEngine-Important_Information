@@ -154,7 +154,7 @@ Debug.WriteLine($"Score: {score:#####}"); // Score: 450
 You can format numbers anytime you display them. For example, you can format numbers for a Text object.
 ```C#
 // Code from my Wac-A-Mole Project
-_timeDisplay.SetMessage($"Time: {0:0.00}"); // Rounds timer to 2 decimal places (12.25s).
+_timeDisplay.SetMessage($"Time: {_timeRemaining:0.00}"); // Rounds timer to 2 decimal places (12.25s).
 _scoreDisplay.SetMessage($"Score: {_player.Score:00000}"); // Forces at least 5 zeros (00400)
 ```
 
